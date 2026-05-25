@@ -34,29 +34,17 @@ function Facilities() {
   return (
     <section className="relative py-24 overflow-hidden bg-gradient-to-br from-rose-50 via-pink-50 to-fuchsia-50">
 
-      {/* animated glow blobs */}
+      {/* glow */}
       <motion.div
-        animate={{
-          y: [0, -25, 0],
-          x: [0, 20, 0],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-        }}
-        className="absolute top-0 left-10 w-72 h-72 bg-pink-200/30 rounded-full blur-3xl"
+        animate={{ y: [0, -25, 0], x: [0, 20, 0] }}
+        transition={{ duration: 8, repeat: Infinity }}
+        className="absolute top-0 left-10 w-72 h-72 bg-[#C9577C]/20 rounded-full blur-3xl"
       />
 
       <motion.div
-        animate={{
-          y: [0, 25, 0],
-          x: [0, -20, 0],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-        }}
-        className="absolute bottom-0 right-10 w-80 h-80 bg-rose-200/30 rounded-full blur-3xl"
+        animate={{ y: [0, 25, 0], x: [0, -20, 0] }}
+        transition={{ duration: 10, repeat: Infinity }}
+        className="absolute bottom-0 right-10 w-80 h-80 bg-[#C9577C]/20 rounded-full blur-3xl"
       />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
@@ -69,13 +57,15 @@ function Facilities() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-pink-500 uppercase tracking-[4px] text-sm mb-4">
+          <p className="text-[#C9577C] uppercase tracking-[4px] text-sm mb-4">
             Amenities
           </p>
 
           <h2
-            className="text-4xl md:text-5xl text-pink-600"
-            style={{ fontFamily: "cursive" }}
+            className="text-4xl md:text-5xl text-[#C9577C]"
+            style={{
+              fontFamily: "'Playfair Display', serif",
+            }}
           >
             Everything You Need, All In One Place
           </h2>
@@ -88,23 +78,20 @@ function Facilities() {
               key={index}
               initial={{ opacity: 0, y: 35 }}
               whileInView={{ opacity: 1, y: 0 }}
-              whileHover={{
-                y: -10,
-                scale: 1.04,
-              }}
+              whileHover={{ y: -10, scale: 1.04 }}
               transition={{ duration: 0.35 }}
               viewport={{ once: true }}
               className="rounded-3xl p-6 text-center
               bg-white/40 backdrop-blur-2xl
               border border-white/60
-              shadow-[0_10px_35px_rgba(244,114,182,0.12)]
-              hover:shadow-[0_15px_45px_rgba(244,114,182,0.22)]"
+              shadow-[0_10px_35px_rgba(201,87,124,0.12)]
+              hover:shadow-[0_15px_45px_rgba(201,87,124,0.22)]"
             >
-              <div className="text-pink-500 flex justify-center mb-4">
+              <div className="text-[#C9577C] flex justify-center mb-4">
                 {item.icon}
               </div>
 
-              <h3 className="text-pink-700 font-semibold leading-7 text-base">
+              <h3 className="text-[#C9577C] font-semibold leading-7 text-base">
                 {item.title}
               </h3>
             </motion.div>

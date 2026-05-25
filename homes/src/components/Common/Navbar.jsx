@@ -13,7 +13,13 @@ function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-pink-500/95 backdrop-blur-md border-b border-pink-300 shadow-lg">
+    <header
+      className="sticky top-0 z-50 w-full
+      bg-gradient-to-r from-[#C95379] to-[#D66588]
+      backdrop-blur-md
+      border-b border-white/10
+      shadow-[0_8px_30px_rgba(201,83,121,0.35)]"
+    >
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
         <div className="flex items-center justify-between h-20">
 
@@ -28,39 +34,44 @@ function Navbar() {
               src="/logo.png"
               alt="Happy Homes Logo"
               className="w-12 h-12 md:w-14 md:h-14 object-contain
-              drop-shadow-[0_0_15px_rgba(255,255,255,0.95)]
-              animate-pulse"
+              drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]"
             />
 
             <div>
               <h1
-                className="text-white text-2xl md:text-3xl font-bold tracking-wide"
+                className="text-white text-2xl md:text-3xl font-bold"
                 style={{
                   textShadow:
-                    "0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(255,255,255,0.6)",
+                    "0 0 10px rgba(255,255,255,0.35)",
                 }}
               >
-                Happy Homes
+                HAPPY HOMES
               </h1>
 
-              <p className="text-white text-xs md:text-sm tracking-widest">
+              <p className="text-white/90 text-xs md:text-sm tracking-widest">
                 Stay Luxury
               </p>
             </div>
           </motion.div>
 
-          {/* Desktop Menu */}
+          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
                 to={link.path}
-                className="text-white font-medium relative transition duration-300
-                hover:text-pink-100
-                after:absolute after:left-0 after:-bottom-1 after:h-[2px]
-                after:w-0 after:bg-white
-                hover:after:w-full
-                after:transition-all after:duration-300"
+                className={({ isActive }) =>
+                  `relative font-medium transition duration-300
+                  ${
+                    isActive
+                      ? "text-white"
+                      : "text-white/90 hover:text-white"
+                  }
+                  after:absolute after:left-0 after:-bottom-1
+                  after:h-[2px] after:bg-white
+                  after:transition-all after:duration-300
+                  ${isActive ? "after:w-full" : "after:w-0 hover:after:w-full"}`
+                }
               >
                 {link.name}
               </NavLink>
@@ -69,10 +80,12 @@ function Navbar() {
             {/* Call Button */}
             <a
               href="tel:9043249842"
-              className="flex items-center gap-2 bg-white text-pink-500 px-5 py-2 rounded-full font-semibold
-              shadow-[0_0_20px_rgba(255,255,255,0.9)]
-              hover:shadow-[0_0_35px_rgba(255,255,255,1)]
-              hover:scale-105 transition-all duration-500 animate-pulse"
+              className="flex items-center gap-2
+              bg-white/90 text-[#C95379]
+              px-6 py-2.5 rounded-full font-semibold
+              backdrop-blur-xl
+              shadow-[0_0_20px_rgba(255,255,255,0.35)]
+              hover:scale-105 transition duration-300"
             >
               <PhoneCall size={18} />
               90432 49842
@@ -89,15 +102,18 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Nav */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -18 }}
+            initial={{ opacity: 0, y: -15 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -18 }}
+            exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-pink-400 px-6 py-6 space-y-5 shadow-lg"
+            className="md:hidden
+            bg-[#CA557B]
+            px-6 py-6
+            space-y-5"
           >
             {navLinks.map((link) => (
               <NavLink
@@ -112,8 +128,9 @@ function Navbar() {
 
             <a
               href="tel:9043249842"
-              className="inline-flex items-center gap-2 bg-white text-pink-500 px-5 py-2 rounded-full font-semibold
-              shadow-[0_0_20px_rgba(255,255,255,0.9)]"
+              className="inline-flex items-center gap-2
+              bg-white text-[#C95379]
+              px-5 py-2 rounded-full font-semibold"
             >
               <PhoneCall size={18} />
               90432 49842

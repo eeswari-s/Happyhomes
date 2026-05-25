@@ -8,11 +8,21 @@ function ContactDetails() {
     <section className="relative py-24 overflow-hidden bg-gradient-to-br from-rose-50 via-pink-50 to-fuchsia-50">
 
       {/* background glow */}
-      <div className="absolute top-0 left-10 w-72 h-72 bg-pink-200/30 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 right-10 w-72 h-72 bg-rose-200/30 rounded-full blur-3xl animate-pulse"></div>
+      <div
+        className="absolute top-0 left-10
+        w-72 h-72 bg-[#C9577C]/20
+        rounded-full blur-3xl animate-pulse"
+      ></div>
+
+      <div
+        className="absolute bottom-0 right-10
+        w-72 h-72 bg-[#C9577C]/20
+        rounded-full blur-3xl animate-pulse"
+      ></div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
 
+        {/* heading */}
         <motion.div
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -20,13 +30,15 @@ function ContactDetails() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <p className="text-pink-500 uppercase tracking-[4px] text-sm mb-4">
+          <p className="text-[#C9577C] uppercase tracking-[4px] text-sm mb-4">
             Contact Details
           </p>
 
           <h2
-            className="text-4xl md:text-5xl text-pink-600"
-            style={{ fontFamily: "cursive" }}
+            className="text-4xl md:text-5xl text-[#C9577C]"
+            style={{
+              fontFamily: "'Playfair Display', serif",
+            }}
           >
             Reach Happy Homes
           </h2>
@@ -40,10 +52,13 @@ function ContactDetails() {
             href="tel:9384526013"
             className="bg-white/40 backdrop-blur-2xl rounded-3xl p-8
             border border-white/60 text-center
-            shadow-[0_10px_35px_rgba(244,114,182,0.15)]"
+            shadow-[0_10px_35px_rgba(201,87,124,0.15)]"
           >
-            <PhoneCall className="mx-auto text-pink-500 mb-4" size={30} />
-            <h3 className="text-pink-600 text-xl font-semibold mb-2">
+            <PhoneCall
+              className="mx-auto text-[#C9577C] mb-4"
+              size={30}
+            />
+            <h3 className="text-[#C9577C] text-xl font-semibold mb-2">
               Phone
             </h3>
             <p className="text-gray-600">093845 26013</p>
@@ -55,10 +70,13 @@ function ContactDetails() {
             href="https://wa.me/919384526013"
             className="bg-white/40 backdrop-blur-2xl rounded-3xl p-8
             border border-white/60 text-center
-            shadow-[0_10px_35px_rgba(244,114,182,0.15)]"
+            shadow-[0_10px_35px_rgba(201,87,124,0.15)]"
           >
-            <FaWhatsapp className="mx-auto text-pink-500 mb-4" size={30} />
-            <h3 className="text-pink-600 text-xl font-semibold mb-2">
+            <FaWhatsapp
+              className="mx-auto text-[#C9577C] mb-4"
+              size={30}
+            />
+            <h3 className="text-[#C9577C] text-xl font-semibold mb-2">
               WhatsApp
             </h3>
             <p className="text-gray-600">Chat With Us</p>
@@ -69,10 +87,13 @@ function ContactDetails() {
             whileHover={{ y: -10, scale: 1.03 }}
             className="bg-white/40 backdrop-blur-2xl rounded-3xl p-8
             border border-white/60 text-center
-            shadow-[0_10px_35px_rgba(244,114,182,0.15)]"
+            shadow-[0_10px_35px_rgba(201,87,124,0.15)]"
           >
-            <MapPin className="mx-auto text-pink-500 mb-4" size={30} />
-            <h3 className="text-pink-600 text-xl font-semibold mb-2">
+            <MapPin
+              className="mx-auto text-[#C9577C] mb-4"
+              size={30}
+            />
+            <h3 className="text-[#C9577C] text-xl font-semibold mb-2">
               Address
             </h3>
             <p className="text-gray-600 leading-7 text-sm">
@@ -88,10 +109,13 @@ function ContactDetails() {
             whileHover={{ y: -10, scale: 1.03 }}
             className="bg-white/40 backdrop-blur-2xl rounded-3xl p-8
             border border-white/60 text-center
-            shadow-[0_10px_35px_rgba(244,114,182,0.15)]"
+            shadow-[0_10px_35px_rgba(201,87,124,0.15)]"
           >
-            <Clock3 className="mx-auto text-pink-500 mb-4" size={30} />
-            <h3 className="text-pink-600 text-xl font-semibold mb-2">
+            <Clock3
+              className="mx-auto text-[#C9577C] mb-4"
+              size={30}
+            />
+            <h3 className="text-[#C9577C] text-xl font-semibold mb-2">
               Working Hours
             </h3>
             <p className="text-gray-600">

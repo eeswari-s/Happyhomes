@@ -7,8 +7,8 @@ function CTA() {
     <section className="relative py-24 overflow-hidden bg-gradient-to-br from-rose-50 via-pink-50 to-fuchsia-100">
 
       {/* glow bg */}
-      <div className="absolute top-0 left-10 w-72 h-72 bg-pink-200/30 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 right-10 w-80 h-80 bg-rose-200/30 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute top-0 left-10 w-72 h-72 bg-[#C9577C]/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-0 right-10 w-80 h-80 bg-[#C9577C]/20 rounded-full blur-3xl animate-pulse"></div>
 
       <div className="max-w-5xl mx-auto px-6 lg:px-10 relative z-10">
 
@@ -21,15 +21,17 @@ function CTA() {
           bg-white/50 backdrop-blur-xl
           border border-white/60
           p-10 md:p-16
-          shadow-[0_10px_40px_rgba(244,114,182,0.15)]"
+          shadow-[0_10px_40px_rgba(201,87,124,0.15)]"
         >
-          <p className="text-pink-500 uppercase tracking-[4px] text-sm mb-4">
+          <p className="text-[#C9577C] uppercase tracking-[4px] text-sm mb-4">
             Book Your Stay
           </p>
 
           <h2
-            className="text-4xl md:text-5xl text-pink-600 mb-6"
-            style={{ fontFamily: "cursive" }}
+            className="text-4xl md:text-5xl text-[#C9577C] mb-6"
+            style={{
+              fontFamily: "'Playfair Display', serif",
+            }}
           >
             Looking for a Peaceful Stay?
           </h2>
@@ -43,9 +45,10 @@ function CTA() {
 
             <a
               href="tel:9384526013"
-              className="bg-pink-500 text-white px-8 py-3 rounded-full font-semibold
-              shadow-[0_0_25px_rgba(236,72,153,0.35)]
-              hover:scale-105 transition duration-300 flex items-center gap-2"
+              className="bg-[#C9577C] text-white px-8 py-3 rounded-full font-semibold
+              shadow-[0_0_25px_rgba(201,87,124,0.30)]
+              hover:scale-105 transition duration-300
+              flex items-center gap-2"
             >
               <PhoneCall size={18} />
               Call Now
@@ -53,8 +56,11 @@ function CTA() {
 
             <a
               href="https://wa.me/919384526013"
-              className="px-8 py-3 rounded-full border border-pink-300
-              bg-white/70 text-pink-600 backdrop-blur-md
+              className="px-8 py-3 rounded-full
+              border border-[#C9577C]/30
+              bg-white/70
+              text-[#C9577C]
+              backdrop-blur-md
               hover:bg-white transition duration-300"
             >
               WhatsApp Us

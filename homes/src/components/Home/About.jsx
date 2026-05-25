@@ -5,7 +5,7 @@ function About() {
   return (
     <section className="relative py-24 overflow-hidden bg-gradient-to-br from-rose-50 via-pink-50 to-fuchsia-50">
 
-      {/* background animated glow */}
+      {/* animated glow */}
       <motion.div
         animate={{
           y: [0, -25, 0],
@@ -15,7 +15,7 @@ function About() {
           duration: 8,
           repeat: Infinity,
         }}
-        className="absolute top-10 left-10 w-72 h-72 bg-pink-200/30 rounded-full blur-3xl"
+        className="absolute top-10 left-10 w-72 h-72 bg-[#C9577C]/20 rounded-full blur-3xl"
       />
 
       <motion.div
@@ -27,7 +27,7 @@ function About() {
           duration: 10,
           repeat: Infinity,
         }}
-        className="absolute bottom-0 right-0 w-80 h-80 bg-rose-200/30 rounded-full blur-3xl"
+        className="absolute bottom-0 right-0 w-80 h-80 bg-[#C9577C]/20 rounded-full blur-3xl"
       />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14 items-center relative z-10">
@@ -40,8 +40,7 @@ function About() {
           viewport={{ once: true }}
           className="relative"
         >
-          {/* glow around image */}
-          <div className="absolute -inset-4 bg-pink-200/40 rounded-3xl blur-2xl"></div>
+          <div className="absolute -inset-4 bg-[#C9577C]/20 rounded-3xl blur-2xl"></div>
 
           <motion.img
             whileHover={{ scale: 1.03 }}
@@ -50,7 +49,7 @@ function About() {
             alt="Happy Homes"
             className="relative w-full h-[500px] object-cover rounded-3xl
             border border-white/60
-            shadow-[0_10px_45px_rgba(244,114,182,0.2)]"
+            shadow-[0_10px_45px_rgba(201,87,124,0.20)]"
           />
         </motion.div>
 
@@ -61,13 +60,15 @@ function About() {
           transition={{ duration: 0.9 }}
           viewport={{ once: true }}
         >
-          <p className="text-pink-500 uppercase tracking-[4px] text-sm mb-4">
+          <p className="text-[#C9577C] uppercase tracking-[4px] text-sm mb-4">
             About Us
           </p>
 
           <h2
-            className="text-4xl md:text-5xl text-pink-600 mb-6"
-            style={{ fontFamily: "cursive" }}
+            className="text-4xl md:text-5xl text-[#C9577C] mb-6"
+            style={{
+              fontFamily: "'Playfair Display', serif",
+            }}
           >
             Your Comfort, Our Priority
           </h2>
@@ -82,6 +83,7 @@ function About() {
             and working professionals to feel relaxed, safe and truly at home.
           </p>
         </motion.div>
+
       </div>
     </section>
   );

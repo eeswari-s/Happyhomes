@@ -16,7 +16,7 @@ function Hero() {
           duration: 8,
           repeat: Infinity,
         }}
-        className="absolute top-0 left-0 w-80 h-80 bg-pink-200/30 rounded-full blur-3xl"
+        className="absolute top-0 left-0 w-80 h-80 bg-[#CA557B]/20 rounded-full blur-3xl"
       />
 
       <motion.div
@@ -28,7 +28,7 @@ function Hero() {
           duration: 10,
           repeat: Infinity,
         }}
-        className="absolute bottom-0 right-0 w-96 h-96 bg-rose-200/30 rounded-full blur-3xl"
+        className="absolute bottom-0 right-0 w-96 h-96 bg-[#CA557B]/20 rounded-full blur-3xl"
       />
 
       <div className="grid lg:grid-cols-2 min-h-screen items-center relative z-10">
@@ -39,7 +39,7 @@ function Hero() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-pink-500 uppercase tracking-[4px] mb-4 text-sm"
+            className="uppercase tracking-[4px] mb-4 text-sm text-[#CA557B]"
           >
             Welcome To
           </motion.p>
@@ -48,20 +48,23 @@ function Hero() {
             initial={{ opacity: 0, y: 35 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-pink-600 text-5xl md:text-7xl leading-tight"
+            className="text-[#CA557B] text-5xl md:text-7xl leading-tight font-semibold"
             style={{
-              fontFamily: "cursive",
-              textShadow: "0 0 14px rgba(255,182,193,0.35)",
+              fontFamily: "'Playfair Display', serif",
+              textShadow: "0 0 12px rgba(202,85,123,0.18)",
             }}
           >
-            Happy Homes
+            HAPPY HOMES
           </motion.h1>
 
           <motion.h2
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="text-pink-700 text-2xl md:text-3xl mt-4"
+            className="text-[#B84E71] text-2xl md:text-3xl mt-4 font-medium"
+            style={{
+              fontFamily: "'Cormorant Garamond', serif",
+            }}
           >
             Feel at Home, Stay in Comfort
           </motion.h2>
@@ -84,8 +87,8 @@ function Hero() {
           >
             <a
               href="tel:9384526013"
-              className="bg-pink-500 text-white px-8 py-3 rounded-full
-              shadow-[0_0_25px_rgba(236,72,153,0.35)]
+              className="bg-[#CA557B] text-white px-8 py-3 rounded-full
+              shadow-[0_0_20px_rgba(202,85,123,0.25)]
               hover:scale-105 transition duration-300
               flex items-center gap-2"
             >
@@ -96,9 +99,10 @@ function Hero() {
             <a
               href="https://wa.me/919384526013"
               className="px-8 py-3 rounded-full
-              bg-white/60 backdrop-blur-md
-              border border-pink-200
-              text-pink-600 hover:bg-white transition"
+              bg-white/70 backdrop-blur-md
+              border border-[#CA557B]/20
+              text-[#CA557B]
+              hover:bg-white transition"
             >
               WhatsApp
             </a>
@@ -128,7 +132,7 @@ function Hero() {
             className="w-full h-full object-cover"
           />
 
-          {/* left blend overlay */}
+          {/* left blend */}
           <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-rose-50"></div>
         </motion.div>
 

@@ -10,7 +10,13 @@ function RoomsHero() {
       <motion.div
         animate={{ y: [0, -25, 0] }}
         transition={{ duration: 8, repeat: Infinity }}
-        className="absolute top-10 left-10 w-72 h-72 bg-pink-200/30 rounded-full blur-3xl"
+        className="absolute top-10 left-10 w-72 h-72 bg-[#C9577C]/20 rounded-full blur-3xl"
+      />
+
+      <motion.div
+        animate={{ y: [0, 20, 0] }}
+        transition={{ duration: 10, repeat: Infinity }}
+        className="absolute bottom-0 right-10 w-80 h-80 bg-[#C9577C]/20 rounded-full blur-3xl"
       />
 
       <div className="grid lg:grid-cols-2 min-h-screen items-center">
@@ -21,7 +27,7 @@ function RoomsHero() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-pink-500 tracking-[4px] uppercase mb-4 text-sm"
+            className="text-[#C9577C] tracking-[4px] uppercase mb-4 text-sm"
           >
             Our Rooms
           </motion.p>
@@ -29,10 +35,10 @@ function RoomsHero() {
           <motion.h1
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-pink-600 text-5xl md:text-7xl"
+            className="text-[#C9577C] text-5xl md:text-7xl"
             style={{
-              fontFamily: "cursive",
-              textShadow: "0 0 12px rgba(255,182,193,0.4)",
+              fontFamily: "'Playfair Display', serif",
+              textShadow: "0 0 12px rgba(201,87,124,0.20)",
             }}
           >
             Stay In Comfort
@@ -50,9 +56,10 @@ function RoomsHero() {
           <div className="mt-8">
             <a
               href="tel:9384526013"
-              className="inline-flex items-center gap-2 bg-pink-500 text-white
+              className="inline-flex items-center gap-2
+              bg-[#C9577C] text-white
               px-7 py-3 rounded-full
-              shadow-[0_0_25px_rgba(236,72,153,0.35)]
+              shadow-[0_0_25px_rgba(201,87,124,0.30)]
               hover:scale-105 transition"
             >
               <BedDouble size={18} />
@@ -75,7 +82,7 @@ function RoomsHero() {
             className="w-full h-full object-cover"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-pink-50/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-rose-50/40"></div>
         </motion.div>
 
       </div>
