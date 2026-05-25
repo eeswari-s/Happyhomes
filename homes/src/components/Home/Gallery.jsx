@@ -41,16 +41,16 @@ function Gallery() {
 
         {/* heading */}
         <div className="text-center mb-14">
-          <p className="text-pink-500 uppercase tracking-[4px] text-sm mb-4">
-            Gallery
-          </p>
+         <p className="text-pink-500 uppercase tracking-[4px] text-sm mb-4">
+  Gallery
+</p>
 
-          <h2
-            className="text-4xl md:text-5xl text-pink-600"
-            style={{ fontFamily: "cursive" }}
-          >
-            Explore Happy Homes
-          </h2>
+<h2
+  className="text-4xl md:text-5xl text-pink-600"
+  style={{ fontFamily: "cursive" }}
+>
+  Explore Happy Homes
+</h2>
         </div>
 
         {/* slider */}

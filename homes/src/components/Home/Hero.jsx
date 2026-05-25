@@ -44,15 +44,16 @@ function Hero() {
             Welcome To
           </motion.p>
 
-         <motion.h1
+       <motion.h1
   initial={{ opacity: 0, y: 35 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
   className="text-[#CA557B] text-5xl md:text-7xl leading-tight"
   style={{
-    fontFamily: "'Anton', sans-serif",
+    fontFamily: "'Bowlby One', cursive",
     letterSpacing: "2px",
     textShadow: "0 0 12px rgba(202,85,123,0.18)",
+    lineHeight: "1.1",
   }}
 >
   HAPPY HOMES
@@ -62,10 +63,11 @@ function Hero() {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ delay: 0.3 }}
-  className="text-[#B84E71] text-2xl md:text-4xl mt-4"
+  className="text-[#B84E71] text-3xl md:text-5xl mt-4"
   style={{
     fontFamily: "'Great Vibes', cursive",
     fontWeight: "400",
+    lineHeight: "1.2",
   }}
 >
   Feel at Home, Stay in Comfort

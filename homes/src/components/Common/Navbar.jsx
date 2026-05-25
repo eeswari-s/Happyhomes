@@ -37,13 +37,14 @@ function Navbar() {
               drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]"
             />
 
-     <div>
+    <div>
   <h1
     className="text-white text-2xl md:text-3xl"
     style={{
-      fontFamily: "'Anton', sans-serif",
+      fontFamily: "'Bowlby One', cursive",
       letterSpacing: "2px",
       textShadow: "0 0 10px rgba(255,255,255,0.35)",
+      lineHeight: "1",
     }}
   >
     HAPPY HOMES
@@ -53,6 +54,8 @@ function Navbar() {
     className="text-white/95 text-lg md:text-xl -mt-1"
     style={{
       fontFamily: "'Great Vibes', cursive",
+      fontWeight: "400",
+      lineHeight: "1.2",
     }}
   >
     Stay Luxury

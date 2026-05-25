@@ -33,13 +33,14 @@ function Footer() {
                 drop-shadow-[0_0_18px_rgba(255,255,255,0.5)]"
               />
 
-           <div>
+          <div>
   <h2
     className="text-white text-2xl md:text-3xl uppercase"
     style={{
-      fontFamily: "'Anton', sans-serif",
+      fontFamily: "'Bowlby One', cursive",
       letterSpacing: "2px",
       textShadow: "0 0 10px rgba(255,255,255,0.25)",
+      lineHeight: "1",
     }}
   >
     HAPPY HOMES
@@ -50,6 +51,7 @@ function Footer() {
     style={{
       fontFamily: "'Great Vibes', cursive",
       fontWeight: "400",
+      lineHeight: "1.2",
     }}
   >
     Stay Luxury
