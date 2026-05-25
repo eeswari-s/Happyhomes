@@ -37,21 +37,27 @@ function Navbar() {
               drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]"
             />
 
-            <div>
-              <h1
-                className="text-white text-2xl md:text-3xl font-bold"
-                style={{
-                  textShadow:
-                    "0 0 10px rgba(255,255,255,0.35)",
-                }}
-              >
-                HAPPY HOMES
-              </h1>
+     <div>
+  <h1
+    className="text-white text-2xl md:text-3xl"
+    style={{
+      fontFamily: "'Anton', sans-serif",
+      letterSpacing: "2px",
+      textShadow: "0 0 10px rgba(255,255,255,0.35)",
+    }}
+  >
+    HAPPY HOMES
+  </h1>
 
-              <p className="text-white/90 text-xs md:text-sm tracking-widest">
-                Stay Luxury
-              </p>
-            </div>
+  <p
+    className="text-white/95 text-lg md:text-xl -mt-1"
+    style={{
+      fontFamily: "'Great Vibes', cursive",
+    }}
+  >
+    Stay Luxury
+  </p>
+</div>
           </motion.div>
 
           {/* Desktop Nav */}

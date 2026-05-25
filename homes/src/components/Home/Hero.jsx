@@ -44,30 +44,32 @@ function Hero() {
             Welcome To
           </motion.p>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 35 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-[#CA557B] text-5xl md:text-7xl leading-tight font-semibold"
-            style={{
-              fontFamily: "'Playfair Display', serif",
-              textShadow: "0 0 12px rgba(202,85,123,0.18)",
-            }}
-          >
-            HAPPY HOMES
-          </motion.h1>
+         <motion.h1
+  initial={{ opacity: 0, y: 35 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="text-[#CA557B] text-5xl md:text-7xl leading-tight"
+  style={{
+    fontFamily: "'Anton', sans-serif",
+    letterSpacing: "2px",
+    textShadow: "0 0 12px rgba(202,85,123,0.18)",
+  }}
+>
+  HAPPY HOMES
+</motion.h1>
 
-          <motion.h2
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            className="text-[#B84E71] text-2xl md:text-3xl mt-4 font-medium"
-            style={{
-              fontFamily: "'Cormorant Garamond', serif",
-            }}
-          >
-            Feel at Home, Stay in Comfort
-          </motion.h2>
+<motion.h2
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.3 }}
+  className="text-[#B84E71] text-2xl md:text-4xl mt-4"
+  style={{
+    fontFamily: "'Great Vibes', cursive",
+    fontWeight: "400",
+  }}
+>
+  Feel at Home, Stay in Comfort
+</motion.h2>
 
           <motion.p
             initial={{ opacity: 0 }}

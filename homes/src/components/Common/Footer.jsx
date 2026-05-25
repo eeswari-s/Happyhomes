@@ -33,20 +33,28 @@ function Footer() {
                 drop-shadow-[0_0_18px_rgba(255,255,255,0.5)]"
               />
 
-              <div>
-                <h2
-                  className="text-white text-2xl md:text-3xl font-bold uppercase tracking-wide"
-                  style={{
-                    textShadow: "0 0 10px rgba(255,255,255,0.25)",
-                  }}
-                >
-                  HAPPY HOMES
-                </h2>
+           <div>
+  <h2
+    className="text-white text-2xl md:text-3xl uppercase"
+    style={{
+      fontFamily: "'Anton', sans-serif",
+      letterSpacing: "2px",
+      textShadow: "0 0 10px rgba(255,255,255,0.25)",
+    }}
+  >
+    HAPPY HOMES
+  </h2>
 
-                <p className="text-pink-100 text-sm tracking-[3px]">
-                  Stay Luxury
-                </p>
-              </div>
+  <p
+    className="text-white/95 text-lg -mt-1"
+    style={{
+      fontFamily: "'Great Vibes', cursive",
+      fontWeight: "400",
+    }}
+  >
+    Stay Luxury
+  </p>
+</div>
             </div>
 
             <p className="text-white/90 leading-7 text-sm">
