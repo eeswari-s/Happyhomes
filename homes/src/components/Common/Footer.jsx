@@ -1,6 +1,6 @@
 import React from "react";
 import { PhoneCall, MapPin } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 function Footer() {
@@ -9,7 +9,6 @@ function Footer() {
       className="relative mt-20 overflow-hidden
       bg-gradient-to-r from-[#C95379] to-[#D66588]"
     >
-      {/* glow blobs */}
       <div className="absolute top-0 left-10 w-44 h-44 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-0 right-10 w-52 h-52 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
 
@@ -21,10 +20,7 @@ function Footer() {
           className="grid md:grid-cols-3 gap-8"
         >
           {/* Left */}
-          <div
-            className="bg-white/10 backdrop-blur-xl
-            border border-white/20 rounded-3xl p-6"
-          >
+          <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6">
             <div className="flex items-center gap-4 mb-4">
               <img
                 src="/logo.png"
@@ -33,30 +29,30 @@ function Footer() {
                 drop-shadow-[0_0_18px_rgba(255,255,255,0.5)]"
               />
 
-          <div>
-  <h2
-    className="text-white text-2xl md:text-3xl uppercase"
-    style={{
-      fontFamily: "'Bowlby One', cursive",
-      letterSpacing: "2px",
-      textShadow: "0 0 10px rgba(255,255,255,0.25)",
-      lineHeight: "1",
-    }}
-  >
-    HAPPY HOMES
-  </h2>
+              <div>
+                <h2
+                  className="text-white text-2xl md:text-3xl uppercase"
+                  style={{
+                    fontFamily: "'Bowlby One', cursive",
+                    letterSpacing: "2px",
+                    textShadow: "0 0 10px rgba(255,255,255,0.25)",
+                    lineHeight: "1",
+                  }}
+                >
+                  HAPPY HOMES
+                </h2>
 
-  <p
-    className="text-white/95 text-lg -mt-1"
-    style={{
-      fontFamily: "'Great Vibes', cursive",
-      fontWeight: "400",
-      lineHeight: "1.2",
-    }}
-  >
-    Stay Luxury
-  </p>
-</div>
+                <p
+                  className="text-white/95 text-lg -mt-1"
+                  style={{
+                    fontFamily: "'Great Vibes', cursive",
+                    fontWeight: "400",
+                    lineHeight: "1.2",
+                  }}
+                >
+                  Stay Luxury
+                </p>
+              </div>
             </div>
 
             <p className="text-white/90 leading-7 text-sm">
@@ -66,10 +62,7 @@ function Footer() {
           </div>
 
           {/* Contact */}
-          <div
-            className="bg-white/10 backdrop-blur-xl
-            border border-white/20 rounded-3xl p-6"
-          >
+          <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6">
             <h3 className="text-white text-xl font-semibold mb-5">
               Contact Details
             </h3>
@@ -85,10 +78,23 @@ function Footer() {
 
               <a
                 href="https://wa.me/919384526013"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-start gap-3 hover:translate-x-1 transition"
               >
                 <FaWhatsapp size={18} />
                 <span>WhatsApp Available</span>
+              </a>
+
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/happyhomes.stayluxury?utm_source=qr&igsh=dnZjcXM5eTBlcGNt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 hover:translate-x-1 transition"
+              >
+                <FaInstagram size={18} />
+                <span>@happyhomes.stayluxury</span>
               </a>
 
               <div className="flex items-start gap-3">
@@ -104,10 +110,7 @@ function Footer() {
           </div>
 
           {/* Right */}
-          <div
-            className="bg-white/10 backdrop-blur-xl
-            border border-white/20 rounded-3xl p-6"
-          >
+          <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6">
             <h3 className="text-white text-xl font-semibold mb-5">
               Quick Links
             </h3>
@@ -120,7 +123,6 @@ function Footer() {
           </div>
         </motion.div>
 
-        {/* bottom */}
         <div className="border-t border-white/20 mt-10 pt-6 text-center text-white/80 text-sm">
           © 2026 HAPPY HOMES. All Rights Reserved.
         </div>
