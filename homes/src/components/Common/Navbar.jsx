@@ -97,7 +97,7 @@ function Navbar() {
               hover:scale-105 transition duration-300"
             >
               <PhoneCall size={18} />
-              90432 49842
+            9384526013
             </a>
           </div>
 
